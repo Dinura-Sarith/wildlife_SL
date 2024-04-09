@@ -1,15 +1,1 @@
-{
-    "name": "Wildlife Sri Lanka",
-    "short_name": "wildlifesrilanka",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#fff",
-    "orientation": "portrait-primary",
-    "icons": [
-      {
-        "src": "/img/wildlife-sri-lanka-high-resolution-logo (2).png",
-        "sizes": "72x54",
-        "type": "image/png"
-      }
-    ]
-}      
+{"theme_color":"#f9f8c8","background_color":"#f2ffb3","icons":[{"purpose":"maskable","sizes":"512x512","src":"icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icon512_rounded.png","type":"image/png"}],"orientation":"any","display":"standalone","dir":"auto","lang":"en-US","name":"Wildlife Sri Lanka","short_name":"wls","start_url":"https://dinura-sarith.github.io/wildlife_SL/index.html","scope":"https://dinura-sarith.github.io/wildlife_SL/"}
