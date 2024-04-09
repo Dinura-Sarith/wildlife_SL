@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Wildlife Sri Lanka</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-form" id="loginForm">
+      <h1>Sign In</h1>
+
+      <div class="form-message-container">
+        <span>Please enter your credentials</span>
+      </div>
+
+      <form>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="button" onclick="loginUser()">Sign In</button>
+        <a href="#">Forgot Your Password?</a>
+      </form>
+      <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+    </div>
+    <div class="signup-form hidden" id="signupForm">
+      <h1>Sign Up</h1>
+
+      <div class="form-message-container">
+        <span>Create an account</span>
+      </div>
+
+      <form>
+        <input type="text" id="regName" placeholder="Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+        <button type="button" onclick="registerUser()">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" id="showLogin">Sign In</a></p>
+    </div>
+  </div>
+  <script src="login.js"></script>
+
+
+</body>
+</html>

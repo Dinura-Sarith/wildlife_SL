@@ -1,0 +1,25 @@
+{
+    "users" : [
+        {
+            "username" : "admin",
+            "password" : "admin",
+            "role" : "admin",
+            "email" : "admin@wls.com"
+        },
+        
+        {
+            "username" : "Josh Bush",
+            "password" : "j.bush",
+            "role" : "site_user",
+            "email" : "bush@wls.com"
+        },
+
+        {
+            "username" : "Max Jack",
+            "password" : "m.jack",
+            "role" : "site_user",
+            "email" : "jack@wls.com"
+        }
+
+    ]
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sri Lanka</title>
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="manifest" a href="manifest.js">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="page_2.js"></script>
+    <script src="newslet.js"></script>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="logo">
+            <img src="./logo1.png" alt="logo">
+        </div>
+
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="page_2.html">Intro</a>
+                </li>
+                <li>
+                    <a href="page_3.html">Indigenous Species</a>
+                </li>
+                <li>
+                    <a href="page_4.html">SL Leopard</a>
+                </li>
+                <li>
+                    <a href="page_5.html">Conservation</a>
+                </li>
+                <li>
+                    <a href="page_7.html">Yala</a>
+                </li>
+                <li>
+                    <a href="page_8.html">Wilpattu</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div x-data="parks">
+
+        <main>
+            <section class="banner">
+                <img src="./elephant2.jpg" alt="banner">
+            </section>
+            <h1 x-text="main1"></h1>
+            <section class="content4">
+                <h2 x-text="main2"></h2>
+                <p x-text="par1"></p>
+                <img src="./herd.jpg" alt="img">
+            </section>
+            <section class="content4">
+                <h2 x-text="main3"></h2>
+                <p x-text="par2"></p>
+                <img src="./rforest.jpg" alt="img">
+            </section>
+            <section class="content4">
+                <h2 x-text="main4"></h2>
+                <p x-text="par3"></p>
+                <img src="./hp.jpg" alt="img">
+            </section>
+            <section class="content4">
+                <h2 x-text="main5"></h2>
+                <p x-text="par4"></p>
+                <img src="./hp2.jpg" alt="img">
+            </section>
+            <section class="content5">
+                <table>
+                    <tr>
+                        <th>National park</th>
+                        <th>Animals</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Minneriya national park</td>
+                        <td>
+                            Sri lankan leopard
+                            <br>
+                            Elephant
+                            <br>
+                            Sloth bears
+                            <br>
+                            Spotted deer
+                        </td>
+                        <td><a href="https://maps.app.goo.gl/zJx8gy9VHUTvx6s46">Map location</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sinharaja rain forest</td>
+                        <td>
+                            Sri Lankan leopard
+                            <br>
+                            Toque macaque
+                            <br>
+                            Sri Lankan jackal
+                            <br>
+                            Red slender loris
+                        </td>
+                        <td><a href="https://maps.app.goo.gl/T54V4xPDbCTx3WgV9">Map location</a></td>
+                    </tr>
+                    <tr>
+                        <td>Horton plains national park</td>
+                        <td>
+                            Sambar deer
+                            <br>
+                            Wild boar
+                            <br>
+                            Purple faced langur
+                            <br>
+                            Wood pigeon
+                        </td>
+                        <td><a href="https://maps.app.goo.gl/yQPFGKLHZnhF7goi7">Map location</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kumana national park</td>
+                        <td>
+                            Pelicans
+                            <br>
+                            Painted storks
+                            <br>
+                            Spoonbills
+                            <br>
+                            White ibis
+                        </td>
+                        <td><a href="https://maps.app.goo.gl/Ei7LuZuUWe8yqMqn9">Map location</a></td>
+                    </tr>
+
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Email:wildlifesrilanka@gmail.com</p>
+        <p>Contact:+9471 4545454</p>
+        <p>&copy; 2024 Wildlife Sri Lanka. All rights reserved.</p>
+        <div class="newsletter">
+            <h1>Get Newsletter</h1>
+            <p>Enter your email in the box below to recieve latest news and information about our activities.</p>
+            <form onsubmit="storeNewsLetter();return false;" class="newsl">
+                <input type="email" id="newsL" placeholder="Email" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!--Refernce sites
+        https://minneriyasafari.com/about/
+        https://whc.unesco.org/en/list/405/
+        http://nuwaraeliyainfo.com/things-to-do/horton-plains
+        https://www.kumananationalpark.com/-->
+    </footer>
+
+</body>
+
+</html>

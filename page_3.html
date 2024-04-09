@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sri Lanka</title>
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="manifest" a href="manifest.js">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="page_3.js"></script>
+    <script src="newslet.js"></script>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="logo">
+            <img src="./logo1.png" alt="logo">
+        </div>
+
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="page_2.html">Intro</a>
+                </li>
+                <li>
+                    <a href="page_3.html">Indigenous Species</a>
+                </li>
+                <li>
+                    <a href="page_4.html">SL Leopard</a>
+                </li>
+                <li>
+                    <a href="page_5.html">Conservation</a>
+                </li>
+                <li>
+                    <a href="page_7.html">Yala</a>
+                </li>
+                <li>
+                    <a href="page_8.html">Wilpattu</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div x-data="species">
+
+        <main>
+            <section class="banner">
+                <img src="./slothbear1.jpg" alt="banner">
+            </section>
+            <h1 x-text="head1"></h1>
+            <section class="content5">
+                <p x-text="p1"></p>
+            </section>
+
+            <h2 x-text="head2"></h2>
+            <section class="content6">
+                <img src="./elephant3.jpg">
+                <p x-text="p2">.</p>
+            </section>
+            <h2 x-text="head3"></h2>
+            <section class="content6">
+                <img src="./slothbear1.jpg">
+                <p x-text="p3"></p>
+            </section>
+            <h2 x-text="head4"></h2>
+            <section class="content6">
+                <img src="./sambur.jpg">
+                <p x-text="p4"></p>
+            </section>
+            <h2 x-text="head5"></h2>
+            <section class="content6">
+                <img src="./rilawa.jpg">
+                <p x-text="p5"></p>
+            </section>
+            <h2 x-text="head6"></h2>
+            <section class="content6">
+                <img src="./wadura.JPG">
+                <p x-text="p6"></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Email:wildlifesrilanka@gmail.com</p>
+        <p>Contact:+9471 4545454</p>
+        <p>&copy; 2024 Wildlife Sri Lanka. All rights reserved.</p>
+        <div class="newsletter">
+            <h1>Get Newsletter</h1>
+            <p>Enter your email in the box below to recieve latest news and information about our activities.</p>
+            <form onsubmit="storeNewsLetter();return false;" class="newsl">
+                <input type="email" id="newsL" placeholder="Email" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!--Reference sites https://travellersisle.com/wildlife-in-sri-lanka/-->
+    </footer>
+
+</body>
+
+</html>

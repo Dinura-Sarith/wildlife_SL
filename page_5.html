@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Sri Lanka</title>
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="manifest" a href="manifest.js">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="page_5.js"></script>
+    <script src="newslet.js"></script>
+
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="logo">
+            <img src="./logo1.png" alt="logo">
+        </div>
+
+        <nav>
+
+            <ul class>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="page_2.html">Intro</a>
+                </li>
+                <li>
+                    <a href="page_3.html">Indigenous Species</a>
+                </li>
+                <li>
+                    <a href="page_4.html">SL Leopard</a>
+                </li>
+                <li>
+                    <a href="page_5.html">Conservation</a>
+                </li>
+                <li>
+                    <a href="page_7.html">Yala</a>
+                </li>
+                <li>
+                    <a href="page_8.html">Wilpattu</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div x-data="conservation">
+
+        <main>
+            <section class="banner">
+                <img src="./cons1.jpeg" alt="banner">
+            </section>
+            <h1 x-text="head1"></h1>
+            <section class="content8">
+                <p x-text="p1"></p>
+            </section>
+            <h1 x-text="head2"></h1>
+            <section class="img-box">
+                <section class="box4">
+                    <img src="./cons2.jpg" alt="img">
+                    <h3 x-text="head3"></h3>
+                </section>
+                <section class="box4">
+                    <img src="./cons3.jpg" alt="img">
+                    <h3 x-text="head4"></h3>
+                </section>
+                <section class="box4">
+                    <img src="./hp.jpg" alt="img">
+                    <h3 x-text="head5"></h3>
+                </section>
+                <section class="box4">
+                    <img src="./cons4.jpg" alt="img">
+                    <h3 x-text="head6"></h3>
+                </section>
+
+            </section>
+            <h1 x-text="head7"></h1>
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.945747289865!2d79.91723077475676!3d6.89709269310208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705602881137!5m2!1sen!2slk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <p>Email:wildlifesrilanka@gmail.com</p>
+        <p>Contact:+9471 4545454</p>
+        <p>&copy; 2024 Wildlife Sri Lanka. All rights reserved.</p>
+        <div class="newsletter">
+            <h1>Get Newsletter</h1>
+            <p>Enter your email in the box below to recieve latest news and information about our activities.</p>
+            <form onsubmit="storeNewsLetter();return false;" class="newsl">
+                <input type="email" id="newsL" placeholder="Email" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!--Reference sites https://www.mwfc.gov.lk/department-of-wildlife-conservation/-->
+    </footer>
+
+</body>
+
+</html>
